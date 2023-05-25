@@ -1,0 +1,129 @@
+<!-- <?php
+
+// @include 'config.php';
+
+// session_start();
+
+// if(isset($_POST['submit'])){
+
+//    $name = mysqli_real_escape_string($conn, $_POST['name']);
+//    $email = mysqli_real_escape_string($conn, $_POST['email']);
+//    $pass = md5($_POST['password']);
+//    $cpass = md5($_POST['cpassword']);
+//    $user_type = $_POST['user_type'];
+//    strtolower($user_type);
+
+//    $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+
+//    $result = mysqli_query($conn, $select);
+
+//    if(mysqli_num_rows($result) > 0){
+
+//       $row = mysqli_fetch_array($result);
+
+//       if($row['user_type'] == 'admin'){
+
+//          $_SESSION['admin_name'] = $row['name'];
+//          header('location:admin_page.php');
+
+//       }elseif($row['user_type'] == 'student'){
+
+//          $_SESSION['user_name'] = $row['name'];
+//          header('location:student_page.php');
+
+//       }
+     
+//    }else{
+//       $error[] = 'incorrect email or password!';
+//    }
+
+// };
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WMSUGGEST</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+   
+<div class="form-container" hidden>
+   <div>
+      {% with messages = get_flashed_messages(with_categories=true) %}
+         {% if messages %}
+            {% for category, message in messages %}
+               {% if category == 'success_register' %}
+                  <div class="">
+                     <div class="">
+                        <div class="">
+                           <div style="padding: 10%; color: crimson; font-size: 25px; font-weight: 700">
+                              <center>
+                                 {{ message }}
+                              </center>
+                              <script>
+                                 window.setTimeout(function () {
+                                    window.location.reload();
+                                   }, 3000);
+                              </script>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               {% elif category == 'error' %}
+                  <div class="">
+                     <div class="">
+                        <div class="">
+                           <div style="padding: 10%; color: crimson; font-size: 25px; font-weight: 700">
+                              <center>
+                                 {{ message }}
+                              </center>
+                              <script>
+                                 window.setTimeout(function () {
+                                    window.location.reload();
+                                 }, 3000);
+                              </script>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               {% elif category == 'info' %}
+                  <div class="">
+                     <div class="">
+                        <div class="">
+                           <div style="padding: 10%; color:crimson;	 font-size: 25px; font-weight: 700">
+                              <center>
+                                 {{ message }}
+                              </center>
+                              <script>
+                                 window.setTimeout(function () {
+                                    window.location.reload();
+                                 }, 3000);
+                              </script>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               {% endif %}
+            {% endfor %}
+         {% endif %}
+      {% endwith %}
+   </div>
+   <form action="{{ url_for('_route_admin.login_admin')}}" method="POST" hidden>
+      <h3>Admin Login</h3>
+      <input type="email" name="email" required placeholder="Enter your email">
+      <input type="password" name="password" required placeholder="Enter your password">
+      <input type="submit" name="submit" value="login now" class="form-btn">
+      <p>Don't have an account? <a href="/register_form_admin">Register now</a></p>
+   </form>
+   <meta http-equiv="Refresh" content="0">
+</div>
+
+</body>
+</html>

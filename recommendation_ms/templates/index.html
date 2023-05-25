@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <img src="https://i.ibb.co/BKBcTDK/246738642-1312989249161669-8722645006192496377-n.png" alt="" border="0"> -->
+   <title>WMSUGGEST</title>
+   <!-- custom css file link  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}"> -->
+   	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	
+   
+</head>
+<body>
+   <!-- Main Navigation -->
+   <nav class="main-nav" id="main-nav">
+    <div class="content-wrapper-sm">
+      <a href="#" class="navbar-brand"></a>
+      <div id="menu-button" onclick="toggleNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#reserve">How it works</a></li>
+        <li><a href="/login_form">Sign in</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    function toggleNav() {
+      var navLinks = document.getElementById("nav-links");
+      navLinks.classList.toggle("collapsed");
+    }
+  </script>
+  
+  <style>
+    .nav-links.collapsed {
+      display: none;
+    }
+    
+    #menu-button {
+      cursor: pointer;
+    }
+  </style>
+
+  
+  <!-- Main header -->
+  <header>
+   <!-- First replaceble image -->
+   <div class="wrapper astonish animated fadeInDown">
+    
+    
+    <h1><strong>WMSU</strong>GGEST</h1>
+    <h2 style="color:#111">A Course Recommendation System<br>
+                      </h2>
+   </div>
+  </header>
+  
+  <!-- Main content -->
+  <main>
+   <div class="content-wrapper" id="about">
+    <!-- second replaceble image -->
+    <!-- <img class="img-absolute" src="https://raw.githubusercontent.com/Jesus-E-Rodriguez/cityscapes-landing-page/master/img/city2.png" alt="City 2"> -->
+    <div class="grid">
+     <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animation="fadeInLeft">
+      <h2 class="section-title">About WMSUGGEST </h2>
+      <p  style="color:#111;text-align:justify">WMSUGGEST is a course recommendation system that helps 
+        students choose the right courses based on their attributes prior to college, including their WMSU College Entrance Test. 
+        </p>
+      <p  style="color:#111;text-align:justify">It is a powerful tool that helps students make informed
+         decisions about their college courses. By using the system, students can maximize 
+         their learning potential and achieve their academic and career goals.</p>
+
+      </div>
+      <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animation="fadeInLeft">
+        <!-- <img src="https://i.ibb.co/9sH6dXn/332362758-905807330733394-933020500334298658-n.png" alt="332362758-905807330733394-933020500334298658-n" border="0"> -->
+        <img src='https://i.postimg.cc/RCXfpXDn/331399553-1227939848156079-226752992829075726-n.png' border='0' alt='331399553-1227939848156079-226752992829075726-n'/>
+        <style>
+          @media only screen and (max-width: 414px) {
+            /* Your CSS rules for screens with a width of 414 pixels or less go here */
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+        </style>
+        </div>
+    </div>
+   </div>
+  
+   <div id="reserve" class="content-wrapper-lg text-center astonish" data-animation="zoomIn">
+    <h2 class="section-title">How it works?</h2>
+    <div class="grid">
+      <div class="grid-col-sm-12 grid-col-md-8 astonish" data-animation="fadeInLeft">
+          <img src='https://i.postimg.cc/k5YGFp4n/332362758-905807330733394-933020500334298658-n.png' border='0' alt='332362758-905807330733394-933020500334298658-n'/>
+        </div>
+       <div class="grid-col-sm-12 grid-col-md-4 astonish" data-animation="fadeInLeft">
+        <p  style="color:#111;text-align:justify ">The system requires the student to sign up and complete their profile. 
+          The profile will include personal information such as their name, sex, and email, as well as 
+          student personality type and senior high school information, such as their SHS GPA and SHS 
+          strand or track, including the name of the school where they studied SHS and the WMSU CET.</p>
+
+        <p  style="color:#111;text-align:justify ">The system will then suggest a list of courses that are the best match for the student data</p>
+
+         </div>
+     </div>
+    <a href="/login_form" class="btn btn-outline-purple" >APPLY NOW</a>
+   </div>
+   </main>
+  
+  <!-- Main footer -->
+  <footer>
+   <div class="content-wrapper-sm display-flex-between">
+    <!-- Easily replaceble copyright information -->
+    <a href="http://wmsu.edu.ph/" target="_blank" ><small>Visit WMSU page</small></a>
+
+    <!-- Make sure to edit the links so that they go to your social media. -->
+    <div class="social-links">
+     <ul>
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+     </ul>
+    </div>
+   </div>
+  </footer>
+<input type="text" hidden value="{{msg}}" id="alert">
+<script>
+  window.onload = function() {
+    let input = document.getElementById("alert");
+    let value = input.value;
+    if (value=='invalid'){
+      Swal.fire({
+        title: 'Incorrect Email/Password',
+        icon: 'error'
+      });
+    }
+    if (value=='success'){
+      Swal.fire({
+        title: 'You successfully registered',
+        icon: 'success'
+      });
+    }
+  };
+</script>
+
+
+  <!-- The Modal -->
+  <div id="myModal1" class="modal1">
+   <!-- Modal content -->
+   <div class="modal-content">
+      <span class="close1">&times;</span>
+      <br>
+      <div class="form-container">
+
+         <form action="{{ url_for('_route_student.login_student') }}" method="POST">
+      
+            <h3>Sign in</h3>
+            
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" required id="floatingInputInvalid" id="floatingInput" name="email" placeholder="name@example.com">
+              <label style="color: #111;" for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingInput" required name="password" placeholder="name@example.com">
+              <label style="color: #111;"  name="password" for="floatingInput">Password</label>
+            </div>
+           
+            
+            <input type="submit" name="submit" value="Sign in" class="form-btn">
+            <p>Don't have an account? <a href="/register_form">Register</a></p>
+         </form>
+      </div>
+   </div>
+
+</div>
+<!-- Modal des2 -->
+				<!-- The Modal -->
+				<div id="myModal2" class="modal2">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close2">&times;</span>
+						<br>
+                  <div class="form-container">
+
+                     <form action="{{ url_for('_route_student.login_student') }}" method="POST">
+                        
+                  
+                        <h3>Sign in</h3>
+                        <input type="email" name="email" required placeholder="Enter your email">
+                        <input type="password" name="password" required placeholder="Enter your password">
+                        <input type="submit" name="submit" value="Sign in" class="form-btn">
+                        
+                        <p>Don't have an account? <a href="/register_form">Register</a></p>
+                     </form>
+                  
+                  </div>
+					</div>
+
+				</div>
+
+</body>
+</html>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11">//sweetalert</script>
+<script src="sweetalert2.all.min.js">//sweetalert</script>
+
+<script>
+  var mess = document.getElementById("msg");
+  if (mess=='Wrong'){
+    alert('Wrong Email/Password');
+  }
+</script>
+<style>
+  
+   .form-container form a,
+   .form-container form select{
+      width: 100%;
+      padding:10px 15px;
+      font-size: 17px;
+      margin:8px 0;
+      background: #eee;
+      border-radius: 5px;
+      float: left;
+   }
+
+</style>
+<style>
+   /* The Modal (background) */
+.modal1 {
+      display: none; /* Hidden by default */
+      position: absolute; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      /*overflow: auto; /* Enable scroll if needed */
+      background: crimson; /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      border-radius: 10px;
+      float:left;
+}
+.modal2 {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+  /* overflow: auto; /* Enable scroll if needed */
+   background: crimson; /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   border-radius: 10px;
+   float:left;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    
+      background-color: #fff;
+      margin: 5% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      border-radius:10px;
+      width: 50%; /* Could be more or less, depending on screen size */
+      font-family: var(--poppins);
+   }
+
+/* The Close Button */
+.close1 {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      margin-left: 95%;
+   }
+
+.close1:hover,
+.close1:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+   }
+
+.close2 {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      margin-left: 95%;
+   }
+
+.close2:hover,
+.close2:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+   }
+
+.close3 {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      
+   }
+
+.close3:hover,
+.close3:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+   }
+
+.user-info{
+      display:flex;
+      justify-content:center;
+
+   }
+</style>
+
+<script>
+// Modal
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close1")[0];
+
+// When the user clicks on the button, open the modal
+btn1.onclick = function() {
+   modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+      modal1.style.display = "none";
+   }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+      if (event.target == modal1) {
+      modal1.style.display = "none";
+      }
+   }
+</script>
+
+<script>
+// Modal
+// Get the modal
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on the button, open the modal
+btn2.onclick = function() {
+modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+   modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+   if (event.target == modal2) {
+   modal2.style.display = "none";
+   }
+}
+</script>
+
+<style>
+   @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+.container, .container-sm, .container-md {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm, .container-md {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md {
+    max-width: 1140px;
+  }
+}
+
+.container-sm {
+  max-width: 640px;
+}
+
+.container-md {
+  max-width: 960px;
+}
+
+/* A flex grid to be used as a backup in case display grid
+   is not supported in the browser. */
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.grid .grid-col-sm-1, .grid .grid-col-sm-2, .grid .grid-col-sm-3, .grid .grid-col-sm-4, .grid .grid-col-sm-5, .grid .grid-col-sm-6, .grid .grid-col-sm-7, .grid .grid-col-sm-8, .grid .grid-col-sm-9, .grid .grid-col-sm-10, .grid .grid-col-sm-11, .grid .grid-col-sm-12, .grid .grid-col-sm,
+.grid .grid-col-sm-auto, .grid .grid-col-md-1, .grid .grid-col-md-2, .grid .grid-col-md-3, .grid .grid-col-md-4, .grid .grid-col-md-5, .grid .grid-col-md-6, .grid .grid-col-md-7, .grid .grid-col-md-8, .grid .grid-col-md-9, .grid .grid-col-md-10, .grid .grid-col-md-11, .grid .grid-col-md-12, .grid .grid-col-md,
+.grid .grid-col-md-auto, .grid .grid-col-lg-1, .grid .grid-col-lg-2, .grid .grid-col-lg-3, .grid .grid-col-lg-4, .grid .grid-col-lg-5, .grid .grid-col-lg-6, .grid .grid-col-lg-7, .grid .grid-col-lg-8, .grid .grid-col-lg-9, .grid .grid-col-lg-10, .grid .grid-col-lg-11, .grid .grid-col-lg-12 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .grid .grid-col-sm-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .grid .grid-col-sm-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .grid .grid-col-sm-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid .grid-col-sm-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .grid .grid-col-sm-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .grid .grid-col-sm-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid .grid-col-sm-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .grid .grid-col-sm-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .grid .grid-col-sm-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid .grid-col-sm-10 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .grid .grid-col-sm-11 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .grid .grid-col-sm-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid .grid-col-md-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .grid .grid-col-md-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .grid .grid-col-md-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid .grid-col-md-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .grid .grid-col-md-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .grid .grid-col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid .grid-col-md-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .grid .grid-col-md-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .grid .grid-col-md-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid .grid-col-md-10 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .grid .grid-col-md-11 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .grid .grid-col-md-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid .grid-col-lg-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.3333333333%;
+            flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .grid .grid-col-lg-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.6666666667%;
+            flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .grid .grid-col-lg-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .grid .grid-col-lg-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .grid .grid-col-lg-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .grid .grid-col-lg-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .grid .grid-col-lg-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333333%;
+            flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .grid .grid-col-lg-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .grid .grid-col-lg-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .grid .grid-col-lg-10 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.3333333333%;
+            flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .grid .grid-col-lg-11 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.6666666667%;
+            flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .grid .grid-col-lg-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* If the grid is supported then I will use that, if not then
+the display flex can serve as a backup. */
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    -ms-flex-wrap: none;
+        flex-wrap: none;
+    margin-right: none;
+    margin-left: none;
+  }
+  .grid > [class^="grid-col-"] {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    max-width: none;
+  }
+  .grid .grid-col-sm-1, .grid .grid-col-sm-2, .grid .grid-col-sm-3, .grid .grid-col-sm-4, .grid .grid-col-sm-5,
+  .grid .grid-col-sm-6, .grid .grid-col-sm-7, .grid .grid-col-sm-8, .grid .grid-col-sm-9, .grid .grid-col-sm-10,
+  .grid .grid-col-sm-11, .grid .grid-col-sm-12, .grid .grid-col-md-1, .grid .grid-col-md-2, .grid .grid-col-md-3,
+  .grid .grid-col-md-4, .grid .grid-col-md-5, .grid .grid-col-md-6, .grid .grid-col-md-7, .grid .grid-col-md-8,
+  .grid .grid-col-md-9, .grid .grid-col-md-10, .grid .grid-col-md-11, .grid .grid-col-md-12, .grid .grid-col-lg-1,
+  .grid .grid-col-lg-2, .grid .grid-col-lg-3, .grid .grid-col-lg-4, .grid .grid-col-lg-5, .grid .grid-col-lg-6,
+  .grid .grid-col-lg-7, .grid .grid-col-lg-8, .grid .grid-col-lg-9, .grid .grid-col-lg-10, .grid .grid-col-lg-11,
+  .grid .grid-col-lg-12 {
+    grid-column: span 12;
+  }
+  @media (min-width: 544px) {
+    .grid .grid-col-sm-12 {
+      grid-column: span 12;
+    }
+    .grid .grid-col-sm-11 {
+      grid-column: span 11;
+    }
+    .grid .grid-col-sm-10 {
+      grid-column: span 10;
+    }
+    .grid .grid-col-sm-9 {
+      grid-column: span 9;
+    }
+    .grid .grid-col-sm-8 {
+      grid-column: span 8;
+    }
+    .grid .grid-col-sm-7 {
+      grid-column: span 7;
+    }
+    .grid .grid-col-sm-6 {
+      grid-column: span 6;
+    }
+    .grid .grid-col-sm-5 {
+      grid-column: span 5;
+    }
+    .grid .grid-col-sm-4 {
+      grid-column: span 4;
+    }
+    .grid .grid-col-sm-3 {
+      grid-column: span 3;
+    }
+    .grid .grid-col-sm-2 {
+      grid-column: span 2;
+    }
+    .grid .grid-col-sm-1 {
+      grid-column: span 1;
+    }
+  }
+  @media (min-width: 768px) {
+    .grid .grid-col-md-12 {
+      grid-column: span 12;
+    }
+    .grid .grid-col-md-11 {
+      grid-column: span 11;
+    }
+    .grid .grid-col-md-10 {
+      grid-column: span 10;
+    }
+    .grid .grid-col-md-9 {
+      grid-column: span 9;
+    }
+    .grid .grid-col-md-8 {
+      grid-column: span 8;
+    }
+    .grid .grid-col-md-7 {
+      grid-column: span 7;
+    }
+    .grid .grid-col-md-6 {
+      grid-column: span 6;
+    }
+    .grid .grid-col-md-5 {
+      grid-column: span 5;
+    }
+    .grid .grid-col-md-4 {
+      grid-column: span 4;
+    }
+    .grid .grid-col-md-3 {
+      grid-column: span 3;
+    }
+    .grid .grid-col-md-2 {
+      grid-column: span 2;
+    }
+    .grid .grid-col-md-1 {
+      grid-column: span 1;
+    }
+  }
+  @media (min-width: 992px) {
+    .grid .grid-col-lg-12 {
+      grid-column: span 12;
+    }
+    .grid .grid-col-lg-11 {
+      grid-column: span 11;
+    }
+    .grid .grid-col-lg-10 {
+      grid-column: span 10;
+    }
+    .grid .grid-col-lg-9 {
+      grid-column: span 9;
+    }
+    .grid .grid-col-lg-8 {
+      grid-column: span 8;
+    }
+    .grid .grid-col-lg-7 {
+      grid-column: span 7;
+    }
+    .grid .grid-col-lg-6 {
+      grid-column: span 6;
+    }
+    .grid .grid-col-lg-5 {
+      grid-column: span 5;
+    }
+    .grid .grid-col-lg-4 {
+      grid-column: span 4;
+    }
+    .grid .grid-col-lg-3 {
+      grid-column: span 3;
+    }
+    .grid .grid-col-lg-2 {
+      grid-column: span 2;
+    }
+    .grid .grid-col-lg-1 {
+      grid-column: span 1;
+    }
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  color: crimson;
+  background: #fff;
+}
+
+body p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+html {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 544px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+button, .btn {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.display-flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 544px) {
+  .display-flex-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.btn {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 5rem;
+  margin: 1.5625rem 0 0;
+  border-radius: 2px;
+  text-align: center;
+  display: inline-block;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.btn-outline-teal, .btn-outline-purple {
+  color: #00d8b2;
+  border: 2px solid #00d8b2;
+}
+
+.btn-outline-teal:hover, .btn-outline-purple:hover {
+  background-color: #00d8b2;
+  color: #ffffff;
+}
+
+.btn-outline-purple {
+  color: crimson;
+  border: 2px solid crimson;
+}
+
+.btn-outline-purple:hover {
+  background-color: crimson;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: inherit;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: crimson;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-wrapper-sm {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content-wrapper {
+  position: relative;
+  padding: 5rem 20%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.content-wrapper-lg {
+  position: relative;
+  padding: 12rem 20%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  z-index: 1;
+  margin-top: 1.5rem;
+}
+
+.contact-form .form-group input, .contact-form .form-group textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #00d8b2;
+  border-radius: 0;
+  color: #00d8b2;
+  outline: none;
+  display: block;
+  width: 100%;
+}
+
+.contact-form .form-group input:focus, .contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-form .form-group input:focus ~ label,
+.contact-form .form-group input:valid ~ label,
+.contact-form .form-group textarea:focus ~ label,
+.contact-form .form-group textarea:valid ~ label {
+  top: -1.1rem;
+  left: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.contact-form .form-group label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.8rem;
+  color: #fefffe;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.contact-form .form-group textarea {
+  resize: none;
+}
+
+#menu-button {
+  cursor: pointer;
+  padding: 0.5rem;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+}
+
+#menu-button .bar1, #menu-button .bar2, #menu-button .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #fefffe;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+          transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+          transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.main-nav {
+  display: block;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  background: #111;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
+.main-nav > .content-wrapper-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.main-nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: crimson;
+  text-decoration: none;
+}
+
+.main-nav .nav-links {
+  position: relative;
+  top: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  overflow: hidden;
+  height: 0;
+  background: transparent;
+}
+
+@media (min-width: 768px) {
+  .main-nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
+}
+
+.main-nav .nav-links li {
+  margin: 1rem;
+  text-align: center;
+}
+
+.main-nav .nav-links li a {
+  color: crimson;
+  display: block;
+  text-decoration: none;
+}
+
+.main-nav .nav-open {
+  position: absolute;
+  top: 133%;
+  width: 100%;
+  display: block;
+  height: auto;
+  background: #111;
+}
+
+.main-nav .nav-open li {
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav .nav-open li a {
+  padding: 2rem 0;
+}
+
+.fixed-nav {
+  background: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-size: 3.25rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (min-width: 544px) {
+  header h1 {
+    font-size: 4.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 6.25rem;
+  }
+}
+
+header h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.img-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+#map {
+  height: 350px;
+  width: 100%;
+}
+
+footer {
+  padding: 2rem;
+}
+
+footer .social-links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .social-links ul li {
+  margin: 1rem;
+  text-align: center;
+}
+
+footer .social-links ul li a {
+  font-size: 1.5rem;
+  color: #fefffe;
+  display: block;
+}
+</style>
+<script>
+   /*
+Created on: 6/1/17
+Name: astonish.js
+By: Jesus Rodriguez
+Description: A light and simple framework to reveal animations from the
+animate.css library.
+*/
+
+/* This jQuery file can take the following data attribues from html code: data-animation, data-delay, data-duration. data-animation is required in order to assign an animation from the animate.css library. data-delay and data-duration control the delay of the animation for when the next one will play and the duration controls for how long the animation will play for. It is important to note that for this to work, the elements must be hidden in the html code first. This is accomplished by setting the .astonish class with an opacity of 0, once the element is in view, the .animated must have an opacity of 1 in order for the animation to be seamless. */
+
+// When the document is ready, the follwing will run
+$(function () {
+   'use strict';
+   var $window = $(window); // Cache the window
+
+   // Function that is responsible for revealing and hiding objects as necessary
+   function astonish() {
+       /* If the window width is less than 748 than it is most likely a mobile device and
+       animations are turned off for better mobile performance */
+       if ($window.width() > 748) {
+           var window_top = $window.scrollTop(), // Top of the screen
+               window_bottom = $window.height() * 0.8 + window_top; /* Bottom of screen with a little of padding from the window's height the 0.8 controls the
+                                                                       amount of padding and can be re-adjusted to trigger animations at a higher or lower
+                                                                       window scroll position. */
+
+           /* Reveal animation will look for all elements that do not have the
+           animated class and cycle through each one as if it were a for loop */
+           $(".astonish:not(.animated)").each(function () {
+               var $this = $(this), // In this instance $this refers to any object with a class of astonish
+                   object_top = $this.offset().top, // The top part of any object
+                   object_bottom = $this.outerHeight() + object_top, // Bottom part of any object
+                   animation = $this.data("animation"); /* Gets the data-animation taget attribute from html regarding the type of animation
+                                                           that is going to be played. This variable is later inserted alongside the 'animated'
+                                                           class in order for the animation to play.
+
+               /* If the window bottom is greater than the top of the object and the window top is greater than the object's bottom, than apply the following */
+               if ((window_bottom > object_top) && (window_top < object_bottom)) {
+                   // Declaring variables
+                   var delay,
+                       animationDuration;
+                   // Get the data-delay attribute, if not present a default will be given
+                   if (typeof $this.data("delay") !== 'undefined') {
+                       delay = $this.data("delay");
+                   } else {
+                       delay = 0; // Default delay
+                   }
+                   // Get the data-duration attribute, if not present a default will be given
+                   if (typeof $this.data("duration") !== 'undefined') {
+                       animationDuration = $this.data("duration");
+                   } else {
+                       animationDuration = 1; // Default duration
+                   }
+                   // If one or both have been set, display animation according to those user defined values
+                   if (delay > 0 || animationDuration > 0) {
+                       window.setTimeout(function () {
+                           $this.css({
+                               "moz-animation-duration": animationDuration + 's',
+                               "webkit-animation-duration": animationDuration + 's',
+                               "animation-duration": animationDuration + 's'
+                           });
+                           /* In order for the animate.css to work an element must have the 'animated' class and the name of the animation class i.e, "fadeInUP", "fadeInDown", etc. The animation attribute is being passed in from the html code allowing this to function dynamically without explicitly stating it in this code */
+                           $this.addClass('animated ' + animation);
+                       }, delay * 1000);
+                   } else {
+                       // If not defined, the default animate.css will take over with default delay and duration
+                       $this.addClass('animated ' + animation);
+                   }
+               }
+           });
+       }
+   }
+   /* The window on scroll event fires multiple times and can be
+   very taxing on the browser, therefore a timeout is used in order
+   to lessen the impact of firing the same event multiple times.
+   Either method can be used to lessen the effect, however it will interfere
+   with the speed in which the function will fire and it is not recommended to
+   make it too slow or it will not match the user's scroll speed */
+   /*$window.on('scroll', function () {
+       setTimeout(function () {
+           astonish();
+       }, 1000);
+   });*/
+   var timeOut;
+
+   $window.scroll(function () {
+       if (timeOut) {
+           // Clear timeOut if there already is one
+           clearTimeout(timeOut);
+           timeOut = null;
+       }
+       timeOut = setTimeout(astonish, 10);
+       //console.log("The time it takes for astonish to fire");
+   });
+});
+</script>
+<script>
+   // When the menu button is click then open the nav menu
+$('#menu-button').click(function() {
+   $(this).toggleClass('change');
+   $('.nav-links').toggleClass('nav-open');
+});
+
+/* If the window is resized and the class change has already been
+applied, then toggle it to avoid an issue with the menu button disappearing */
+$(window).resize(function() {
+   if ($(window).width() > 768) {
+        console.log($(window).width());
+        if ($('.nav-links').hasClass('nav-open')) {
+             $('#menu-button').toggleClass('change');
+             $('.nav-links').toggleClass('nav-open');
+        }
+   }
+});
+</script>
+<script>
+   // Function for fading in and out the nav bar
+$(function() {
+   $(window).scroll(function() {
+        var $this = $(window);
+
+        if($this.scrollTop() > 100) {
+             $('#main-nav').addClass('fixed-nav');
+        } else {
+             $('#main-nav').removeClass('fixed-nav');
+        }
+   });
+});
+</script>
+<script>
+   // smoothScroll function is applied from the document ready function
+function smoothScroll (duration) {
+	$('a[href^="#"]').on('click', function(event) {
+
+	    var target = $( $(this).attr('href') );
+
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, duration);
+	    }
+	});
+}
+
+$(function() {
+	smoothScroll(300);
+});
+</script>
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+.container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+}
+
+.container .content{
+   text-align: center;
+}
+
+.container .content h3{
+   font-size: 30px;
+   color:#333;
+}
+
+.wmsu{
+    color: crimson;
+}
+
+.container .content h3 span{
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   padding:0 15px;
+}
+
+.container .content h1{
+   font-size: 50px;
+   color:#333;
+}
+
+.container .content h1 span{
+   color:crimson;
+}
+
+.container .content p{
+   font-size: 25px;
+   margin-bottom: 20px;
+}
+
+.container .content .btn{
+   display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: #333;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+}
+
+.container .content .btn:hover{
+   background: crimson;
+}
+
+.form-container{
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+   
+}
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: #fff;
+   text-align: center;
+   width: 500px;
+}
+
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color:#333;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #fff;
+}
+
+.form-container form .form-btn{
+   background: #fbd0d9;
+   color:crimson;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+
+
+.form-container form .form-btn:hover{
+   background: crimson;
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.form-container form p a{
+   color:crimson;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+</style>
+

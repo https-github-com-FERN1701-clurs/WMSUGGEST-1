@@ -1,0 +1,124 @@
+<!-- <?php
+
+// @include 'config.php';
+
+// if(isset($_POST['submit'])){
+
+//    $name = mysqli_real_escape_string($conn, $_POST['name']);
+//    $email = mysqli_real_escape_string($conn, $_POST['email']);
+//    $pass = md5($_POST['password']);
+//    $cpass = md5($_POST['cpassword']);
+//    $user_type = $_POST['user_type'];
+//    strtolower($user_type);
+  
+
+//    $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+
+//    $result = mysqli_query($conn, $select);
+
+//    if(mysqli_num_rows($result) > 0){
+
+//       $error[] = 'user already exist!';
+
+//    }else{
+
+//       if($pass != $cpass){
+//          $error[] = 'password not matched!';
+//       }else{
+//          $insert = "INSERT INTO user_form(name, email, password, user_type) VALUES('$name','$email','$pass','$user_type')";
+//          mysqli_query($conn, $insert);
+//          header('location:login_form.php');
+//       }
+//    }
+
+// };
+
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WMSUGGEST</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+<body>
+   
+<div class="form-container">
+
+   <form action="{{ url_for('_route_student.register_student') }}" method="POST">
+      
+      <h3>SIGN UP</h3>
+      <br>
+      <div class="form-floating mb-3">
+         <input type="text" class="form-control" required id="floatingInputInvalid" id="floatingInput" name="first_name"  placeholder="Enter your First name">
+         <label style="color: #111;" for="floatingInput">First Name</label>
+       </div>
+       <div class="form-floating mb-3">
+         <input type="text" class="form-control"  id="floatingInputInvalid" id="floatingInput" name="middle_name"  placeholder="Enter your Middle name">
+         <label style="color: #111;" for="floatingInput">Middle Name</label>
+       </div>
+       <div class="form-floating mb-3">
+         <input type="text" class="form-control" required id="floatingInputInvalid" id="floatingInput" name="last_name"  placeholder="Enter your Middle name">
+         <label style="color: #111;" for="floatingInput">Last Name</label>
+       </div>
+       <div class="form-floating">
+         <select class="form-select" required id="floatingSelect" name="sex" aria-label="Floating label select example">
+           <option selected></option>
+           <option value="Male">Male</option>
+           <option value="Female">Female</option>
+         </select>
+         <label for="floatingSelect">Sex</label>
+       </div>
+       <div class="form-floating mb-3">
+         <input type="email" class="form-control" required id="floatingInputInvalid" id="floatingInput" name="email" placeholder="Personal Email/School Email">
+         <label style="color: #111;" for="floatingInput">Email address</label>
+       </div>
+       <div class="form-floating mb-3" class="input-group">
+         <input type="password" class="form-control" required id="floatingInputInvalid" id="floatingInput" name="password" placeholder="Password" maxlength="8" >
+         <label style="color: #111;" for="floatingInput">Password</label>
+       </div>
+       <div class="form-floating mb-3" class="input-group">
+        <input type="password" class="form-control" required id="floatingInputInvalid" id="floatingInput" name="cpassword" placeholder=" Confirm Password" maxlength="8">
+        <label style="color: #111;" for="floatingInput">Confirm Password</label>
+      </div>
+    
+      <input type="submit" name="submit" value="Sign up" class="form-btn">
+      <p>Already have an account? <a href="/">Sign in</a></p>
+   </form>
+
+</div>
+<input type="text" hidden value="{{msg}}" id="alert">
+<script>
+  window.onload = function() {
+    let input = document.getElementById("alert");
+    let value = input.value;
+    if (value=='email'){
+      Swal.fire({
+        title: 'Email already exists',
+        icon: 'info'
+      });
+    }
+
+    if (value=='pass'){
+      Swal.fire({
+        title: "The passwords don't match",
+        icon: 'info'
+      });
+    }
+   
+  };
+</script>
+
+</body>
+</html>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11">//sweetalert</script>
+<script src="sweetalert2.all.min.js">//sweetalert</script>
